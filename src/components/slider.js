@@ -15,7 +15,7 @@ const SliderStyled = styled.div`
 const SlideStyled = styled.div`
   display: flex;
   align-items: flex-end;
-  background-image: url("../../images/mulan.jpg");
+  background-image: url("./images/mulan.jpg");
   background-size: cover;
   border-radius: .5rem;
   block-size: 19.375rem;
@@ -57,13 +57,13 @@ class Slider extends Component {
 
     if(slide === 'page1')
     {
-      slider.style.backgroundImage = 'url(../../images/mulan.jpg)'
+      slider.style.backgroundImage = 'url(./images/mulan.jpg)'
       event.target.classList.add('button-is-active')
     } else if (slide === 'page2'){
-      slider.style.backgroundImage = 'url(../../images/raya.jpg)'
+      slider.style.backgroundImage = 'url(./images/raya.jpg)'
       event.target.classList.add('button-is-active')
     } else if (slide === 'page3'){
-      slider.style.backgroundImage = 'url(../../images/unidos.jpg)'
+      slider.style.backgroundImage = 'url(./images/unidos.jpg)'
       event.target.classList.add('button-is-active')
     }
   }
@@ -77,8 +77,8 @@ class Slider extends Component {
         SlideStyled({
           children: SlideButtonsStyled({
             children: [
-              new Button({text: 'ver ahora', iconUrl: '../../icons/play.svg'}),
-              new Button({text: 'ver después', iconUrl: '../../icons/plus.svg', isSecondary: true})
+              new Button({text: 'ver ahora', iconUrl: './icons/play.svg'}),
+              new Button({text: 'ver después', iconUrl: './icons/plus.svg', isSecondary: true})
             ]
           }),
           id: 'slider',

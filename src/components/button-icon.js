@@ -17,7 +17,7 @@ class ButtonIcon extends Component {
   render() {
     return ButtonIconStyled({
       children: [
-        Icon({ src: '../../icons/search.svg' }),
+        Icon({ src: './icons/search.svg' }),
       ]
     })
   }

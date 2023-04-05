@@ -83,18 +83,18 @@ class Search extends Component {
             createElement('img', {
               id: 'search-icon',
               onclick: this.handleSearchClick,
-              src: '../../icons/search-primary.svg',
+              src: './icons/search-primary.svg',
               width: '20px',
               height: '20px',
             }),
-            new Icon({ id: 'menu-icon', iconUrl: '../../icons/menu.svg' }, 'Menu'),
+            new Icon({ id: 'menu-icon', iconUrl: './icons/menu.svg' }, 'Menu'),
           ]
         }),
         SearchMobileStyled({
           id: 'search-mobile',
           class: 'search-mobile',
           children: [
-            createElement('img', { onclick: this.handleSearchClick, src: '../../icons/back.svg' }),
+            createElement('img', { onclick: this.handleSearchClick, src: './icons/back.svg' }),
             SearchBarStyled({
               children: [
                 new Input({
