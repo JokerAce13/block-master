@@ -22,7 +22,7 @@ const DetailMovieContainerStyled = styled.div`
   padding-inline-end: 1rem;
 
   position: fixed;
-  inset-block-start: 30%;
+  inset-block-start: 40%;
   inset-inline-start: 50%;
   transform: translateY(-50%) translateX(-50%);
   z-index: 3;
