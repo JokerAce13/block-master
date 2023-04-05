@@ -43,7 +43,7 @@ class Movie extends Component {
           class: `movie-rate ${vote_average >= 7 ? 'movie-rate-recommended': ''}`,
           children: [
             createElement('img', {
-            src: `../../icons/star.svg`,
+            src: `./icons/star.svg`,
             height: '24px',
             width: '24px'
           }),

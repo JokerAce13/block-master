@@ -15,7 +15,7 @@ class EmptyState extends Component {
     return EmptyStateStyled({
         class: `empty-state  ${isVisible ? 'is-visible' : ''}`,
         children: [
-            createElement('img', {id: 'empty-state-image', src: '../../images/empty-state.png'}),
+            createElement('img', {id: 'empty-state-image', src: './images/empty-state.png'}),
             createElement('h1', {id: 'empty-state-description'}, `No se encontraron resultados para "${criteria}"`)
         ]
     })

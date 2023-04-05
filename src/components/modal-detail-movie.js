@@ -95,7 +95,7 @@ class ModalDetailMovie extends Component {
                   children: DetailMovieCloseStyled({
                     class: 'detail-close',
                     onclick: this.handleCloseClick,
-                    src: '../../icons/delete.svg'
+                    src: './icons/delete.svg'
                   })
                 }),
                 DetailMovieContainerStyled({
@@ -110,7 +110,7 @@ class ModalDetailMovie extends Component {
                             class: `movie-rate-mobile movie-rate ${vote_average >= 7 ? 'movie-rate-recommended': ''}`,
                             children: [
                               createElement('img', {
-                              src: `../../icons/star.svg`,
+                              src: `./icons/star.svg`,
                               height: '24px',
                               width: '24px'
                             }),
@@ -128,8 +128,8 @@ class ModalDetailMovie extends Component {
                                 DetailMovieButtonsStyled({
                                     class: 'detail-buttons',
                                     children: [
-                                        new Button({text: 'ver ahora', iconUrl: '../../icons/play.svg', isFully: true}),
-                                        new Button({text: 'ver después', iconUrl: '../../icons/plus.svg', isSecondary: true, isFully: true})
+                                        new Button({text: 'ver ahora', iconUrl: './icons/play.svg', isFully: true}),
+                                        new Button({text: 'ver después', iconUrl: './icons/plus.svg', isSecondary: true, isFully: true})
                                     ]
                                 })
                             ]
